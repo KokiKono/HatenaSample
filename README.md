@@ -1,65 +1,18 @@
 # HatenaSample チュートリアル編  
 ## *React Navigation* とは  
  [React Navigation]:https://reactnavigation.org/ "React Navigation"  
- 世界中の天才たちが開発してきたReact,React Nativeの両方で動作するナビゲーター  
+世界中の天才たちが開発してきたReact,React Nativeの両方で動作するナビゲーター  
 最近、React Native 0.44からFaceBookも推奨してきたホットなライブラリ。  
-React Nativeでは主に画面遷移のコントロールとヘッダー部分をサポートする。  
-例）  
-![GIF](https://reactnavigation.org/assets/iphone-stack.gif "サンプル")  
-*App.js*  
-```javascript
-  import {  
-    StackNavigator,  
-  } from 'react-navigation';  
-  //今回はStackNavigatorを使うと思う。たぶん
-  const BasicApp = StackNavigator({
-    //Viewコンポートの登録
-    Main: {screen: MainScreen},
-    // navigateName : {screen: Viewコンポート}
-    Profile: {screen: ProfileScreen},  
-  });  
-```
-*MainScreen.js*  
-```javascript
-  class MainScreen extends React.Component {  
-    //ヘッダー部分を定義する。細かい部分はソースで説明
-    static navigationOptions = {  
-      title: 'Welcome',  
-    };  
-    render() {  
-      //navigate時に設定した小道具はこのあたりから取得できる。
-      const { navigate } = this.props.navigation;  
-      return (  
-        <Button  
-          title="Go to Jane's profile"  
-          onPress={() =>  
-            //Profileと定義したnavigateNameに遷移する。
-            navigate('Profile', { name: 'Jane' })  
-            // { name: 'Jane'}はProfileスクリーンにname小道具を渡す。
-          }  
-        />  
-      );  
-    }  
-  }  
-```
-*ProfileScreen.js*  
-```javascript
-  class ProfileScreen extends React.Component {
-    static navigationOptions = ({navigation}) => ({  
-      //ここからname小道具を取得できる。
-      title: navigation.state.params.name,  
-    });  
-    render() {
-      //ここからnavigate小道具を取得したい場合は以下のように参照する。
-      const { goBack } = this.props.navigation;  
-      return (  
-        <Button  
-          title="Go back"
-          //画面配列の扱いは他にも色々あるよ。
-          //ちなみにヘッダー左のbackArrowなどはデファルトで設定されてるよ。
-          onPress={() => goBack()}  
-        />  
-      );  
-    }  
-  }  
-```
+React Navigationでは主に画面遷移のコントロールとヘッダー部分をサポートする。  
+[Example React Navigation]:  "例"  
+## *Flux*とは  
+FaceBookがクライアントサイドwebアプリケーションを構築するために使用するアプリケーションアーキテクチャ。
+大きな特徴は単一方向データフローを利用してReactの構成可能なビューコンポーネントを補完する。
+Fluxアプリケーションには、ディスパッチャ、ストア、ビューの３つの主要部分があるが、MVCモデルとは違う。
+###なぜ*Flux*を扱うのか  
+ToDoリストで未完了カウントと完了カウントをそれぞれ別のビューで行うとき、未完了Modelを更新した場合、  
+完了Modelを更新に更新を促す必要があった。  
+このように一つのアクション（未完を完了に）した場合に複数のModelクラスが関係した場合のデータフローには予期せぬ結果が、  
+起きる場合があります。こういったアクションを一方向のデータフローに制御することにより、明確かつ関係に関係を組むことができます。  
+ [Detail Flux]:"詳細"
+ 

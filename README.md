@@ -16,6 +16,7 @@ React Nativeでは主に画面遷移のコントロールとヘッダー部分�
     Profile: {screen: ProfileScreen},  
   });  
 *MainScreen.js*  
+```javascript
   class MainScreen extends React.Component {  
     static navigationOptions = {  
       title: 'Welcome',  
@@ -32,7 +33,9 @@ React Nativeでは主に画面遷移のコントロールとヘッダー部分�
       );  
     }  
   }  
+```
 *ProfileScreen.js*  
+```javascript
   class ProfileScreen extends React.Component {  
     static navigationOptions = ({navigation}) => ({  
       title: navigation.state.params.name,  
@@ -47,3 +50,4 @@ React Nativeでは主に画面遷移のコントロールとヘッダー部分�
       );  
     }  
   }  
+```

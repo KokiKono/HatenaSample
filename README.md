@@ -7,6 +7,7 @@ React Nativeでは主に画面遷移のコントロールとヘッダー部分�
 例）  
 [GIF]:https://reactnavigation.org/assets/iphone-stack.gif "サンプル"  
 *App.js*  
+```javascript
   import {  
     StackNavigator,  
   } from 'react-navigation';  
@@ -15,6 +16,7 @@ React Nativeでは主に画面遷移のコントロールとヘッダー部分�
     Main: {screen: MainScreen},  
     Profile: {screen: ProfileScreen},  
   });  
+```
 *MainScreen.js*  
 ```javascript
   class MainScreen extends React.Component {  

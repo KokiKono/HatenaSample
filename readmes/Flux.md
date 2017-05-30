@@ -12,9 +12,11 @@ WebでもNativeでもデータ更新が行われるのは、ほとんどがユ�
 １アクションの結果が予想できないようになっていきます。  
 
 Fluxを用いたファイル構成を以下のようになります。  
+```
     App/  
     ├ Actions/  
     ├ Stores/  
     ├ Dispatcher/
     ├ Views/  
     └ app.js  
+```

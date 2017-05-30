@@ -41,7 +41,7 @@ export default todoStore;
 ```
 
 ## Hatenaでのサンプル:ToDoList
-```javascript
+<pre class="prettyprint linenums">
 import React from 'react';
 import {
   TouchableOpacity
@@ -99,4 +99,4 @@ export default class ListView extends React.Component{
     );
   }
 }
-```
+</pre>

@@ -5,7 +5,8 @@
 最近、React Native 0.44からFaceBookも推奨してきたホットなライブラリ。  
 React Nativeでは主に画面遷移のコントロールとヘッダー部分をサポートする。  
 例）  
-[GIF]:https://reactnavigation.org/assets/iphone-stack.gif "サンプル"  
+![GIF]
+[GIF] : https://reactnavigation.org/assets/iphone-stack.gif "サンプル"  
 *App.js*  
 ```javascript
   import {  

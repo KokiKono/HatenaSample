@@ -1,8 +1,8 @@
 #Fluxアプリケーション詳細
-[Image1](https://facebook.github.io/flux/img/flux-simple-f8-diagram-1300w.png "単一データフロー1")  
+![Image1](https://facebook.github.io/flux/img/flux-simple-f8-diagram-1300w.png "単一データフロー1")  
 単方向データフローはFluxパターンの中心であり、上の図に沿ってFluxアプリケーションを組みましょう。
-それぞれのノードは独立した入出力インターフェースを含単純なオブジェクトであるべきです。
-[Imge2](https://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png "ユーザーアクション")  
+それぞれのノードは独立した入出力インターフェースを含単純なオブジェクトであるべきです。  
+![Imge2](https://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png "ユーザーアクション")  
 WebでもNativeでもデータ更新が行われるのは、ほとんどがユーザーの操作から発火されます。  
 そのデータ更新は全てにおいて、ディスパッチャを介して、ストアにコールバックを呼び出して、ストアはデータ保守状態に関連するメソッドを呼び出します。  
 ストアがデータ更新を行ったあとはビューに変更イベントを送信します。  

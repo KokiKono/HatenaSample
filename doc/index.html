@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Actions</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createToDo">createToDo</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Stores</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/App/Stores/ToDoStore.js~ToDoStore.html">ToDoStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-todoStore">todoStore</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">Views</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/App/Views/ToDoInput.js~ToDoInput.html">ToDoInput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/App/Views/ToDoList.js~ListView.html">ListView</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="hatenasample-">HatenaSample &#x30C1;&#x30E5;&#x30FC;&#x30C8;&#x30EA;&#x30A2;&#x30EB;&#x7DE8;</h1>
+<h2 id="-react-navigation-"><em>React Navigation</em> &#x3068;&#x306F;</h2>
+<p>&#x4E16;&#x754C;&#x4E2D;&#x306E;&#x5929;&#x624D;&#x305F;&#x3061;&#x304C;&#x958B;&#x767A;&#x3057;&#x3066;&#x304D;&#x305F;React,React Native&#x306E;&#x4E21;&#x65B9;&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;&#x30CA;&#x30D3;&#x30B2;&#x30FC;&#x30BF;&#x30FC;<br>&#x6700;&#x8FD1;&#x3001;React Native 0.44&#x304B;&#x3089;FaceBook&#x3082;&#x63A8;&#x5968;&#x3057;&#x3066;&#x304D;&#x305F;&#x30DB;&#x30C3;&#x30C8;&#x306A;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3002;<br>React Navigation&#x3067;&#x306F;&#x4E3B;&#x306B;&#x753B;&#x9762;&#x9077;&#x79FB;&#x306E;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x3068;&#x30D8;&#x30C3;&#x30C0;&#x30FC;&#x90E8;&#x5206;&#x3092;&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x3059;&#x308B;&#x3002;<br><a href="https://github.com/KokiKono/HatenaSample/blob/turorial/readmes/ReactNavigation.md" title="example">&#x4F8B;&#x306F;&#x3053;&#x3053;</a></p>
+<h2 id="-flux-"><em>Flux</em>&#x3068;&#x306F;</h2>
+<p>FaceBook&#x304C;&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30B5;&#x30A4;&#x30C9;web&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x69CB;&#x7BC9;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30A2;&#x30FC;&#x30AD;&#x30C6;&#x30AF;&#x30C1;&#x30E3;&#x3002;
+&#x5927;&#x304D;&#x306A;&#x7279;&#x5FB4;&#x306F;&#x5358;&#x4E00;&#x65B9;&#x5411;&#x30C7;&#x30FC;&#x30BF;&#x30D5;&#x30ED;&#x30FC;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;React&#x306E;&#x69CB;&#x6210;&#x53EF;&#x80FD;&#x306A;&#x30D3;&#x30E5;&#x30FC;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x88DC;&#x5B8C;&#x3059;&#x308B;&#x3002;
+Flux&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306B;&#x306F;&#x3001;&#x30C7;&#x30A3;&#x30B9;&#x30D1;&#x30C3;&#x30C1;&#x30E3;&#x3001;&#x30B9;&#x30C8;&#x30A2;&#x3001;&#x30D3;&#x30E5;&#x30FC;&#x306E;&#xFF13;&#x3064;&#x306E;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#x304C;&#x3042;&#x308B;&#x304C;&#x3001;MVC&#x30E2;&#x30C7;&#x30EB;&#x3068;&#x306F;&#x9055;&#x3046;&#x3002;</p>
+<h3 id="-flux-">&#x306A;&#x305C;<em>Flux</em>&#x3092;&#x6271;&#x3046;&#x306E;&#x304B;</h3>
+<p>ToDo&#x30EA;&#x30B9;&#x30C8;&#x3067;&#x672A;&#x5B8C;&#x4E86;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3068;&#x5B8C;&#x4E86;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3092;&#x305D;&#x308C;&#x305E;&#x308C;&#x5225;&#x306E;&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x884C;&#x3046;&#x3068;&#x304D;&#x3001;&#x672A;&#x5B8C;&#x4E86;Model&#x3092;&#x66F4;&#x65B0;&#x3057;&#x305F;&#x5834;&#x5408;&#x3001;<br>&#x5B8C;&#x4E86;Model&#x3092;&#x66F4;&#x65B0;&#x306B;&#x66F4;&#x65B0;&#x3092;&#x4FC3;&#x3059;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x3063;&#x305F;&#x3002;<br>&#x3053;&#x306E;&#x3088;&#x3046;&#x306B;&#x4E00;&#x3064;&#x306E;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#xFF08;&#x672A;&#x5B8C;&#x3092;&#x5B8C;&#x4E86;&#x306B;&#xFF09;&#x3057;&#x305F;&#x5834;&#x5408;&#x306B;&#x8907;&#x6570;&#x306E;Model&#x30AF;&#x30E9;&#x30B9;&#x304C;&#x95A2;&#x4FC2;&#x3057;&#x305F;&#x5834;&#x5408;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D5;&#x30ED;&#x30FC;&#x306B;&#x306F;&#x4E88;&#x671F;&#x305B;&#x306C;&#x7D50;&#x679C;&#x304C;&#x3001;<br>&#x8D77;&#x304D;&#x308B;&#x5834;&#x5408;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x3053;&#x3046;&#x3044;&#x3063;&#x305F;&#x30A2;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4E00;&#x65B9;&#x5411;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D5;&#x30ED;&#x30FC;&#x306B;&#x5236;&#x5FA1;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x308A;&#x3001;&#x660E;&#x78BA;&#x304B;&#x3064;&#x95A2;&#x4FC2;&#x306B;&#x95A2;&#x4FC2;&#x3092;&#x7D44;&#x3080;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;<br><a href="https://github.com/KokiKono/HatenaSample/blob/turorial/readmes/Flux.md" title="&#x8A73;&#x7D30;">&#x8A73;&#x7D30;&#x306F;&#x3053;&#x3053;</a></p>
+<h2 id="events-">Events&#x3068;&#x306F;</h2>
+<p><a href="https://github.com/KokiKono/HatenaSample/blob/turorial/readmes/Events.md">&#x8A73;&#x7D30;&#x306F;&#x3053;&#x3053;</a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -12,7 +12,9 @@ import {
 import Icon from 'react-native-vector-icons/Octicons';
 import {NavigationActions} from 'react-navigation';
 import ToDoStore from '../Stores/ToDoStore';
-
+/**
+* @extends {React.Component}
+*/
 export default class ListView extends React.Component{
   static navigationOptions=({navigation})=>{
     const {navigate}=navigation;

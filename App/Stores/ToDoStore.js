@@ -15,6 +15,9 @@ class ToDoStore extends EventEmitter{
         break;
     }
   }
+  /**
+  * @return {todo_items} ToDoリストを配列で返す。
+  */
   getAll(){
     return this.todos;
   }
